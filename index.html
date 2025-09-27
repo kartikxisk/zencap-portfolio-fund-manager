@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      ZenCap Fund Managers LLP - Empowering Founders. Creating Value
+    </title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <link href="style.css" rel="stylesheet" />
+    <style>
+      /* Additional styles specific to the main page */
+      .fund-feature {
+        background: var(--pure-white);
+        border-radius: 15px;
+        padding: 30px;
+        margin-bottom: 20px;
+        box-shadow: 0 5px 25px rgba(124, 178, 126, 0.08);
+        border-left: 5px solid var(--primary-color);
+      }
+
+      .process-step {
+        background: var(--pure-white);
+        border-radius: 15px;
+        padding: 25px;
+        margin-bottom: 20px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .process-step::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100%;
+        background: var(--primary-color);
+      }
+
+      .step-number {
+        background: var(--primary-color);
+        color: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+
+      /* Team Styles */
+      .team-card-new {
+        background: var(--pure-white);
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 0 10px 40px rgba(124, 178, 126, 0.1);
+        transition: all 0.3s ease;
+        height: 100%;
+        border: 1px solid var(--light-seafoam);
+      }
+
+      .team-card-new:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 60px rgba(124, 178, 126, 0.15);
+      }
+
+      .team-photo-container {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .team-photo {
+        width: 200px;
+        height: 200px;
+        border-radius: 15px;
+        object-fit: cover;
+        border: 2px solid var(--light-seafoam);
+      }
+
+      .team-info {
+        text-align: left;
+      }
+
+      .team-description {
+        font-size: 14px;
+        line-height: 1.6;
+        color: #6b7280;
+        margin-bottom: 20px;
+      }
+
+      .team-name-title {
+        text-align: center;
+        padding-top: 20px;
+        border-top: 1px solid var(--light-seafoam);
+      }
+
+      .team-name-title h4 {
+        font-size: 20px;
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: 5px;
+      }
+
+      .team-position {
+        font-size: 14px;
+        color: #6b7280;
+        font-weight: 500;
+        margin-bottom: 0;
+      }
+
+      .hero-section {
+        position: relative;
+        width: 100%;
+        height: 70vh;
+      }
+
+      .heroSwiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background: var(--primary-color) */
+      }
+
+      /* Custom navigation button styling */
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: #ffffff;
+        --swiper-navigation-size: 44px;
+      }
+
+      .swiper-button-next:after,
+      .swiper-button-prev:after {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      /* Custom pagination styling */
+      .swiper-pagination-bullet {
+        background: #ffffff;
+        opacity: 0.5;
+      }
+
+      .swiper-pagination-bullet-active {
+        opacity: 1;
+        background: #007bff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="/">
+          <img src="./assets/logo.png" width="40" alt="ZenCap" class="me-2" />
+          ZenCap
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <!-- ZenCap Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="zencapDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                ZenCap
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#about">Who We Are</a></li>
+                <li><a class="dropdown-item" href="#why">Why Us</a></li>
+                <li>
+                  <a class="dropdown-item" href="#deliver">What We Deliver</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- ZenCap Funds Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="fundsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                ZenCap Funds
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#funds"
+                    >Fund Investment Strategy</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#funds">Investment Process</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#funds">Risk Management</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#funds"
+                    >Governance & Compliance</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- ZenCap Team Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="teamDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                ZenCap Team
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#team">Sharad Gorawara</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#team">Saurabh Srivastava</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#team">Sameer Chowdhery</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Contact ZenCap -->
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact ZenCap</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section with Swiper -->
+    <section id="home" class="hero-section">
+      <div class="swiper heroSwiper">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="container">
+              <div
+                class="row align-items-center justify-content-center justify-content-md-start"
+                style="height: 70vh"
+              >
+                <div class="col-lg-6">
+                  <h1
+                    style="color: #ffffff"
+                    class="display-4 fw-bold mb-4 text-center text-md-start"
+                  >
+                    Empowering Founders
+                    <span>Creating Value.</span>
+                  </h1>
+                  <div
+                    class="d-flex justify-content-center justify-content-md-start"
+                  >
+                    <a href="#funds" class="btn btn-primary me-3"
+                      >Explore Funds</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="container">
+              <div
+                class="row align-items-center justify-content-center justify-content-md-start"
+                style="height: 70vh"
+              >
+                <div class="col-lg-6">
+                  <h1
+                    style="color: #ffffff"
+                    class="display-4 fw-bold mb-4 text-center text-md-start"
+                  >
+                    Empowering Founders
+                    <span>Creating Value.</span>
+                  </h1>
+                  <div
+                    class="d-flex justify-content-center justify-content-md-start"
+                  >
+                    <a href="#funds" class="btn btn-primary me-3"
+                      >Explore Funds</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="container">
+              <div
+                class="row align-items-center justify-content-center justify-content-md-start"
+                style="height: 70vh"
+              >
+                <div class="col-lg-6">
+                  <h1
+                    style="color: #ffffff"
+                    class="display-4 fw-bold mb-4 text-center text-md-start"
+                  >
+                    Empowering Founders
+                    <span>Creating Value.</span>
+                  </h1>
+                  <div
+                    class="d-flex justify-content-center justify-content-md-start"
+                  >
+                    <a href="#funds" class="btn btn-primary me-3"
+                      >Explore Funds</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Who We Are Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center section-title">Who We Are</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <p class="lead text-center mb-5">
+              ZenCap Fund Managers LLP is Fund Manager for a SEBI-registered
+              Category II Alternative Investment Fund. The founding team brings
+              deep professional experience across:
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card-custom p-4 h-100 text-center">
+              <i class="fas fa-handshake fa-3x text-primary-custom mb-3"></i>
+              <h5>Startup Mentorship</h5>
+              <p class="small">
+                Hands-on guidance in product development, go-to-market planning,
+                building teams, customer acquisition.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card-custom p-4 h-100 text-center">
+              <i
+                class="fas fa-search-dollar fa-3x text-primary-custom mb-3"
+              ></i>
+              <h5>Deal Sourcing</h5>
+              <p class="small">
+                High-quality deal flow across technology, fintech, healthtech,
+                deep tech, and sustainability sectors.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card-custom p-4 h-100 text-center">
+              <i class="fas fa-chart-line fa-3x text-primary-custom mb-3"></i>
+              <h5>Capital Raising</h5>
+              <p class="small">
+                Structuring rounds, cap tables, negotiating term sheets,
+                building investor relationships.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card-custom p-4 h-100 text-center">
+              <i class="fas fa-briefcase fa-3x text-primary-custom mb-3"></i>
+              <h5>Portfolio Management</h5>
+              <p class="small">
+                Active portfolio management and strategic exit planning.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-8 mx-auto text-center">
+            <p class="text-muted">
+              ZenCap adheres to the highest standards of governance, compliance,
+              and transparency in managing funds on behalf of its investors.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why ZenCap Section -->
+    <section id="why" class="py-5 why-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center section-title">Why ZenCap</h2>
+            <p class="text-center lead mb-5" style="margin-top: -30px">
+              (Our Differentiators)
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="fund-feature">
+              <h5>
+                <i class="fas fa-users text-primary-custom me-2"></i>Experienced
+                Founding Team
+              </h5>
+              <p class="mb-0">
+                Deep professional experience across investments, startups, and
+                fund management.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="fund-feature">
+              <h5>
+                <i class="fas fa-hands-helping text-primary-custom me-2"></i
+                >Hands-on Mentorship + Strategic Support
+              </h5>
+              <p class="mb-0">
+                Active involvement in portfolio companies with strategic
+                guidance and operational support.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="fund-feature">
+              <h5>
+                <i class="fas fa-network-wired text-primary-custom me-2"></i
+                >Strong Network & Deal Flow
+              </h5>
+              <p class="mb-0">
+                Extensive network of bankers, advisors, and institutional
+                partners for quality deal sourcing.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="fund-feature">
+              <h5>
+                <i class="fas fa-shield-alt text-primary-custom me-2"></i
+                >Regulatory Rigor & Compliance
+              </h5>
+              <p class="mb-0">
+                SEBI registration and NISM certified partners ensuring highest
+                compliance standards.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="fund-feature text-center">
+              <h5>
+                <i class="fas fa-heart text-primary-custom me-2"></i>Long Term,
+                Founder-Friendly Mindset
+              </h5>
+              <p class="mb-0">
+                Committed to building meaningful businesses with a focus on
+                long-term value creation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What ZenCap Delivers -->
+    <section id="deliver" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center section-title">What ZenCap Delivers</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card-custom p-5">
+              <p class="lead">
+                At ZenCap Fund Managers LLP, we unlock unique opportunities at
+                the intersection of growth and innovation. Our Category II
+                Alternative Investment Funds (AIFs) give investors access to
+                pre-IPO placements, growth-stage equity, debt, and other
+                strategic investments.
+              </p>
+              <p>
+                With a hands-on approach, strong governance, and proven
+                experience in mentoring and scaling businesses, we aim to
+                generate superior risk-adjusted returns while supporting the
+                next generation of high-potential companies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ZenCap Funds Section -->
+    <section id="funds" class="py-5 funds-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center section-title">ZenCap Funds</h2>
+          </div>
+        </div>
+
+        <!-- Fund Snapshot -->
+        <div class="row mb-5">
+          <div class="col-lg-8 mx-auto">
+            <div class="card-custom p-5">
+              <h3 class="text-primary-custom mb-2">
+                ZenCap Fund I: Fund Snapshot
+              </h3>
+              <p class="mb-0">
+                <strong>Fund Type:</strong> SEBI-registered Category II AIF
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fund Investment Strategy -->
+        <div id="funds-strategy" class="row mb-5">
+          <div class="col-lg-12">
+            <h3 class="text-center mb-4">Fund Investment Strategy</h3>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="fund-feature h-100">
+                  <h5>Primary Objective: Diversified Investment Approach</h5>
+                  <p>
+                    The Fund's strategy is diversified across multiple asset
+                    classes to achieve capital appreciation and portfolio
+                    stability.
+                  </p>
+                  <h6>Target opportunities include:</h6>
+                  <ul>
+                    <li>Pre-IPO placements</li>
+                    <li>IPOs (as Anchor or QIB investor)</li>
+                    <li>Preferential issues</li>
+                    <li>Debt instruments</li>
+                    <li>
+                      Other funds providing access to alternative asset classes
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="fund-feature h-100">
+                  <h5>Key Investment Parameters</h5>
+                  <p>The Fund seeks opportunities that demonstrate:</p>
+                  <ul>
+                    <li>Strong financial health</li>
+                    <li>Experienced management teams</li>
+                    <li>Clear competitive advantage</li>
+                    <li>Scalability and long-term growth potential</li>
+                  </ul>
+                  <p>
+                    Diversification across sectors and geographies further
+                    strengthens the portfolio and reduces concentration risks.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Investment Process -->
+        <div id="investment-process" class="row mb-5">
+          <div class="col-12">
+            <h3 class="text-center mb-4">Investment Process</h3>
+            <div class="row">
+              <div class="col-lg-4 mb-3">
+                <div class="process-step h-100">
+                  <div class="step-number">1</div>
+                  <h6>Deal Sourcing</h6>
+                  <p class="small mb-0">
+                    Leveraging networks of bankers, advisors, and institutional
+                    partners.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-3">
+                <div class="process-step h-100">
+                  <div class="step-number">2</div>
+                  <h6>Investment Evaluation</h6>
+                  <p class="small mb-0">
+                    Financial, business model, valuation, and risk analysis.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-3">
+                <div class="process-step h-100">
+                  <div class="step-number">3</div>
+                  <h6>Due Diligence</h6>
+                  <p class="small mb-0">
+                    Comprehensive financial, legal, and operational review.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-3">
+                <div class="process-step h-100">
+                  <div class="step-number">4</div>
+                  <h6>Investment Committee Approval</h6>
+                  <p class="small mb-0">
+                    Non-binding recommendations followed by Investment Manager's
+                    decision.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-3">
+                <div class="process-step h-100">
+                  <div class="step-number">5</div>
+                  <h6>Active Portfolio Management</h6>
+                  <p class="small mb-0">
+                    Monitoring, engagement, and rebalancing.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-3">
+                <div class="process-step h-100">
+                  <div class="step-number">6</div>
+                  <h6>Exit Strategy</h6>
+                  <p class="small mb-0">
+                    Secondary sales, block deals, and FPO participation to
+                    optimize liquidity.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Risk Management & Governance -->
+        <div class="row">
+          <div class="col-lg-6">
+            <div id="risk-management" class="fund-feature h-100">
+              <h5>
+                <i class="fas fa-shield text-primary-custom me-2"></i>Risk
+                Management
+              </h5>
+              <p>
+                The Fund employs a robust framework to safeguard investor
+                capital:
+              </p>
+              <ul>
+                <li>Diversification across instruments and sectors</li>
+                <li>Strict valuation discipline</li>
+                <li>Continuous monitoring and proactive adjustments</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div id="governance" class="fund-feature h-100">
+              <h5>
+                <i class="fas fa-gavel text-primary-custom me-2"></i>Governance
+                & Compliance
+              </h5>
+              <ul>
+                <li>SEBI Category II AIF registration</li>
+                <li>Independent audits & transparent reporting</li>
+                <li>NISM Series XIX-C certified leadership</li>
+                <li>Clear conflict of interest & fiduciary duty policies</li>
+                <li>ESG awareness and integration where relevant</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p
+              class="text-primary-custom fw-bold mb-2"
+              style="color: #3b82f6 !important"
+            >
+              TEAM MEMBER
+            </p>
+            <h2 class="section-title">Our Proficient Team</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 mb-3">
+            <div class="team-card-new h-100 d-flex flex-column">
+              <div class="team-photo-container mb-4">
+                <img
+                  src="./assets/teams/sharad.png"
+                  alt="Sharad Gorawara"
+                  class="team-photo"
+                />
+              </div>
+              <div class="team-info flex-grow-1 d-flex flex-column">
+                <div class="flex-grow-1">
+                  <p class="team-description">
+                    Sharad brings extensive experience in investments, deal
+                    sourcing, and portfolio management. At ZenCap, he leads all
+                    investment decisions, sourcing of high-potential
+                    opportunities, portfolio strategy, and active mentorship.
+                  </p>
+                  <p class="team-description">
+                    His expertise in evaluating growth-stage companies,
+                    structuring investments, and scaling businesses enables the
+                    fund to identify and nurture high-value opportunities.
+                  </p>
+                  <p class="team-description">
+                    Sharad holds the NISM Series XIX-C certification, reflecting
+                    strong adherence to regulatory standards and fund governance
+                    best practices.
+                  </p>
+                </div>
+                <div class="team-name-title">
+                  <h4>Sharad Gorawara</h4>
+                  <p class="team-position">Chief Compliance Officer (CCO)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-3">
+            <div class="team-card-new h-100 d-flex flex-column">
+              <div class="team-photo-container mb-4">
+                <img
+                  src="./assets/teams/saurabh.png"
+                  alt="Saurabh Srivastava"
+                  class="team-photo"
+                />
+              </div>
+              <div class="team-info flex-grow-1 d-flex flex-column">
+                <div class="flex-grow-1">
+                  <p class="team-description">
+                    Saurabh has deep experience in fund structuring, governance,
+                    compliance, and risk management. He ensures that ZenCap
+                    operates fully in line with SEBI regulations and industry
+                    best practices.
+                  </p>
+                  <p class="team-description">
+                    As CCO, Saurabh oversees fund operations, compliance
+                    frameworks, investor reporting, and portfolio monitoring,
+                    ensuring disciplined execution, transparency, and alignment
+                    with the fund’s objectives.
+                  </p>
+                  <p class="team-description">
+                    Saurabh is NISM Series XIX-C certified, underscoring his
+                    commitment to regulatory compliance, governance, and
+                    fiduciary responsibility.
+                  </p>
+                </div>
+
+                <div class="team-name-title">
+                  <h4>Saurabh Srivastava</h4>
+                  <p class="team-position">Chief Compliance Officer (CCO)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-3">
+            <div class="team-card-new h-100 d-flex flex-column">
+              <div class="team-photo-container mb-4">
+                <img
+                  src="./assets/teams/sameer.jpg"
+                  alt="Sameer Chowdhery"
+                  class="team-photo"
+                />
+              </div>
+              <div class="team-info flex-grow-1 d-flex flex-column">
+                <div class="flex-grow-1">
+                  <p class="team-description">
+                    Sameer manages ZenCap’s relationships with overseas and
+                    institutional investors, serving as the primary liaison and
+                    ensuring effective communication and reporting.
+                  </p>
+                  <p class="team-description">
+                    He coordinates investor engagement, onboarding, and ongoing
+                    updates, helping ZenCap maintain strong investor confidence
+                    and transparency while supporting the fund’s capital-raising
+                    and relationship-building objectives.
+                  </p>
+                </div>
+                <div class="team-name-title">
+                  <h4>Sameer Chowdhery</h4>
+                  <p class="team-position">Partner & Investor Relations Lead</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 cta-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-4">
+            <h2 class="section-title">
+              Let's build meaningful businesses together.
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <div class="card-custom p-4 text-center h-100">
+                  <i class="fas fa-rocket fa-3x text-primary-custom mb-3"></i>
+                  <h5 class="mb-3">Founders</h5>
+                  <p class="mb-4">Send pitch deck, traction summary.</p>
+                  <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div class="card-custom p-4 text-center h-100">
+                  <i
+                    class="fas fa-chart-pie fa-3x text-primary-custom mb-3"
+                  ></i>
+                  <h5 class="mb-3">Investors</h5>
+                  <p class="mb-4">Request fund information memorandum.</p>
+                  <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4 m-md-0">
+            <a
+              href="#home"
+              class="mb-3 d-block fw-bold"
+              style="font-size: 1.5rem"
+            >
+              <img
+                width="40"
+                src="./assets/logo.png"
+                alt="ZenCap"
+                class="me-2"
+              />
+              ZenCap
+            </a>
+            <p class="mb-1">Empowering Founders. Creating Value.</p>
+            <p class="text-muted small">
+              SEBI-registered Category II Alternative Investment Fund Manager
+            </p>
+          </div>
+
+          <!-- ✅ Updated Quick Links -->
+          <div class="col-lg-4 mb-4 m-md-0">
+            <h5 class="mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#about">Who We Are</a></li>
+              <li class="mb-2"><a href="#funds">ZenCap Funds</a></li>
+              <li class="mb-2"><a href="#team">ZenCap Team</a></li>
+              <li class="mb-2"><a href="contact.html">Contact ZenCap</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 mb-4 m-md-0">
+            <h5 class="mb-3">Contact Information</h5>
+            <div class="mb-2">
+              <i class="fas fa-envelope me-2"></i>
+              <a href="mailto:info@zencapfund.com">info@zencapfund.com</a>
+            </div>
+            <div class="mb-2">
+              <i class="fas fa-globe me-2"></i>
+              <a href="https://www.zencapfund.com" target="_blank"
+                >www.zencapfund.com</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4 pt-4 border-top">
+          <div class="col-12 text-center">
+            <p class="mb-0 small text-muted">
+              &copy; 2025 ZenCap Fund Managers LLP. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+      // Smooth scrolling
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          const navbarHeight = document.querySelector(".navbar").offsetHeight;
+
+          if (target) {
+            const targetPosition = target.offsetTop - navbarHeight;
+            window.scrollTo({
+              top: targetPosition,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+
+      // Add navbar background on scroll
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          navbar.style.background = "rgba(255, 255, 255, 0.98)";
+        } else {
+          navbar.style.background = "rgba(255, 255, 255, 0.95)";
+        }
+      });
+
+      // Initialize Swiper
+      const heroSwiper = new Swiper(".heroSwiper", {
+        // Optional parameters
+        loop: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+
+        // Enable pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        // Enable navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // Enable keyboard control
+        keyboard: {
+          enabled: true,
+        },
+
+        // Smooth transitions
+        effect: "slide",
+        speed: 600,
+      });
+    </script>
+  </body>
+</html>

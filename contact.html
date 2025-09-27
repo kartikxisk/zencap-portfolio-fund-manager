@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - ZenCap Fund Managers LLP</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="/">
+          <img src="./assets/logo.png" width="40" alt="ZenCap" class="me-2" />
+          ZenCap
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <!-- ZenCap Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="zencapDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                ZenCap
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#about">Who We Are</a></li>
+                <li><a class="dropdown-item" href="#why">Why Us</a></li>
+                <li>
+                  <a class="dropdown-item" href="#deliver">What We Deliver</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- ZenCap Funds Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="fundsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                ZenCap Funds
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#funds"
+                    >Fund Investment Strategy</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#funds">Investment Process</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#funds">Risk Management</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#funds"
+                    >Governance & Compliance</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- ZenCap Team Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="teamDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                ZenCap Team
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#team">Sharad Gorawara</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#team">Saurabh Srivastava</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#team">Sameer Chowdhery</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Contact ZenCap -->
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact ZenCap</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="display-4 fw-bold mb-3">Get in Touch</h1>
+            <p class="lead mb-0">
+              Ready to explore investment opportunities or looking for strategic
+              partnerships?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Information Cards -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="contact-info-card">
+              <i class="fas fa-envelope contact-icon"></i>
+              <h4 class="mb-3">Email Us</h4>
+              <p class="mb-3">
+                Send us your queries and we'll get back to you within 24 hours.
+              </p>
+              <a
+                href="mailto:info@zencapfund.com"
+                class="text-primary-custom fw-bold"
+                >info@zencapfund.com</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="contact-info-card">
+              <i class="fas fa-globe contact-icon"></i>
+              <h4 class="mb-3">Visit Our Website</h4>
+              <p class="mb-3">
+                Explore more about our funds and investment opportunities.
+              </p>
+              <a
+                href="https://www.zencapfund.com"
+                class="text-primary-custom fw-bold"
+                target="_blank"
+                >www.zencapfund.com</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Contact Form Section -->
+    <section class="py-5 section-bg-alt">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center section-title">Contact ZenCap</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row">
+              <!-- What can we do for you section -->
+              <div class="col-lg-5 mb-5">
+                <div class="card-custom p-4 h-100">
+                  <h3 class="mb-4">What can we do for you?</h3>
+                  <p class="mb-4">I would like to</p>
+
+                  <div class="mb-3">
+                    <div class="form-check mb-3">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="service"
+                        id="invest"
+                        value="invest"
+                      />
+                      <label class="form-check-label option-pill" for="invest">
+                        Invest in AIFs
+                      </label>
+                    </div>
+                    <div class="form-check mb-3">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="service"
+                        id="partner"
+                        value="partner"
+                      />
+                      <label class="form-check-label option-pill" for="partner">
+                        Partner as a Distributor
+                      </label>
+                    </div>
+                    <div class="form-check mb-3">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="service"
+                        id="accreditation"
+                        value="accreditation"
+                      />
+                      <label
+                        class="form-check-label option-pill"
+                        for="accreditation"
+                      >
+                        Get Investor Accreditation
+                      </label>
+                    </div>
+                    <div class="form-check mb-4">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="service"
+                        id="debt"
+                        value="debt"
+                      />
+                      <label class="form-check-label option-pill" for="debt">
+                        Raise Debt for my Company
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="minInvestment"
+                    />
+                    <label
+                      class="form-check-label small text-muted"
+                      for="minInvestment"
+                    >
+                      I am aware that the Minimum Investment/Commitment ticket
+                      size in Alternative Investment Funds is INR 1 Crore as per
+                      SEBI (Alternative Investment Fund) Regulation, 2012
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Your Information section -->
+              <div class="col-lg-7">
+                <div class="card-custom p-4 h-100">
+                  <h3 class="mb-4">Your Information</h3>
+                  <form id="contactForm">
+                    <div class="row mb-3">
+                      <div class="col-12">
+                        <label for="name" class="form-label"
+                          >Name <span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control custom-input"
+                          id="name"
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <div class="col-md-6">
+                        <label for="country" class="form-label"
+                          >Country <span class="text-danger">*</span></label
+                        >
+                        <select
+                          class="form-select custom-input"
+                          id="country"
+                          required
+                        >
+                          <option value="">Select Country</option>
+                          <option value="IN">India</option>
+                          <option value="US">United States</option>
+                          <option value="UK">United Kingdom</option>
+                          <option value="SG">Singapore</option>
+                          <option value="AE">UAE</option>
+                          <option value="AU">Australia</option>
+                          <option value="CA">Canada</option>
+                          <option value="JP">Japan</option>
+                          <option value="DE">Germany</option>
+                          <option value="FR">France</option>
+                          <option value="OTHER">Other</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="city" class="form-label"
+                          >City/Town <span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control custom-input"
+                          id="city"
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <div class="col-md-6">
+                        <label for="email" class="form-label"
+                          >E Mail <span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="email"
+                          class="form-control custom-input"
+                          id="email"
+                          required
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <label for="mobile" class="form-label"
+                          >Mobile <span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="tel"
+                          class="form-control custom-input"
+                          id="mobile"
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <div class="col-12">
+                        <label for="company" class="form-label"
+                          >Company Name</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control custom-input"
+                          id="company"
+                          placeholder="Optional"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <div class="col-12">
+                        <label for="investmentAmount" class="form-label"
+                          >Investment Amount (if applicable)</label
+                        >
+                        <select
+                          class="form-select custom-input"
+                          id="investmentAmount"
+                        >
+                          <option value="">Select Range</option>
+                          <option value="1-5cr">INR 1-5 Crores</option>
+                          <option value="5-10cr">INR 5-10 Crores</option>
+                          <option value="10-25cr">INR 10-25 Crores</option>
+                          <option value="25-50cr">INR 25-50 Crores</option>
+                          <option value="50cr+">INR 50+ Crores</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="row mb-4">
+                      <div class="col-12">
+                        <label for="message" class="form-label"
+                          >Message <span class="text-danger">*</span></label
+                        >
+                        <textarea
+                          class="form-control custom-input"
+                          id="message"
+                          rows="4"
+                          placeholder="Tell us more about your requirements, investment goals, or partnership interests..."
+                          required
+                        ></textarea>
+                      </div>
+                    </div>
+
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-primary px-5 py-2">
+                        <i class="fas fa-paper-plane me-2"></i>Submit Inquiry
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4 m-md-0">
+            <a
+              href="#home"
+              class="mb-3 d-block fw-bold"
+              style="font-size: 1.5rem"
+            >
+              <img
+                width="40"
+                src="./assets/logo.png"
+                alt="ZenCap"
+                class="me-2"
+              />
+              ZenCap
+            </a>
+            <p class="mb-1">Empowering Founders. Creating Value.</p>
+            <p class="text-muted small">
+              SEBI-registered Category II Alternative Investment Fund Manager
+            </p>
+          </div>
+
+          <!-- ✅ Updated Quick Links -->
+          <div class="col-lg-4 mb-4 m-md-0">
+            <h5 class="mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="index.html#about">Who We Are</a></li>
+              <li class="mb-2"><a href="index.html#funds">ZenCap Funds</a></li>
+              <li class="mb-2"><a href="index.html#team">ZenCap Team</a></li>
+              <li class="mb-2"><a href="contact.html">Contact ZenCap</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 mb-4 m-md-0">
+            <h5 class="mb-3">Contact Information</h5>
+            <div class="mb-2">
+              <i class="fas fa-envelope me-2"></i>
+              <a href="mailto:info@zencapfund.com">info@zencapfund.com</a>
+            </div>
+            <div class="mb-2">
+              <i class="fas fa-globe me-2"></i>
+              <a href="https://www.zencapfund.com" target="_blank"
+                >www.zencapfund.com</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4 pt-4 border-top">
+          <div class="col-12 text-center">
+            <p class="mb-0 small text-muted">
+              &copy; 2025 ZenCap Fund Managers LLP. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+      // Form submission handling with enhanced feedback
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Get form data
+          const formData = {
+            name: document.getElementById("name").value,
+            country: document.getElementById("country").value,
+            city: document.getElementById("city").value,
+            email: document.getElementById("email").value,
+            mobile: document.getElementById("mobile").value,
+            company: document.getElementById("company").value,
+            investmentAmount: document.getElementById("investmentAmount").value,
+            message: document.getElementById("message").value,
+            service: document.querySelector('input[name="service"]:checked')
+              ?.value,
+            minInvestmentAware:
+              document.getElementById("minInvestment").checked,
+          };
+
+          // Basic validation
+          if (!formData.name || !formData.email || !formData.message) {
+            alert("Please fill in all required fields.");
+            return;
+          }
+
+          if (!formData.service) {
+            alert("Please select a service option.");
+            return;
+          }
+
+          // Simulate form submission
+          const submitBtn = document.querySelector('button[type="submit"]');
+          const originalText = submitBtn.innerHTML;
+
+          submitBtn.innerHTML =
+            '<i class="fas fa-spinner fa-spin me-2"></i>Submitting...';
+          submitBtn.disabled = true;
+
+          // Simulate API call
+          setTimeout(() => {
+            submitBtn.classList.add("submit-success");
+            submitBtn.innerHTML =
+              '<i class="fas fa-check me-2"></i>Submitted Successfully!';
+
+            setTimeout(() => {
+              alert(
+                `Thank you ${formData.name}! We have received your inquiry and will get back to you within 24-48 hours. A confirmation email will be sent to ${formData.email}.`
+              );
+
+              // Reset form
+              document.getElementById("contactForm").reset();
+
+              // Reset button
+              submitBtn.innerHTML = originalText;
+              submitBtn.disabled = false;
+              submitBtn.classList.remove("submit-success");
+
+              // Clear radio button selections
+              document
+                .querySelectorAll('input[name="service"]')
+                .forEach((input) => {
+                  input.checked = false;
+                });
+            }, 1000);
+          }, 2000);
+        });
+
+      // Smooth scrolling
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          const navbarHeight = document.querySelector(".navbar").offsetHeight;
+
+          if (target) {
+            const targetPosition = target.offsetTop - navbarHeight;
+            window.scrollTo({
+              top: targetPosition,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+
+      // Add navbar background on scroll
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          navbar.style.background = "rgba(255, 255, 255, 0.98)";
+        } else {
+          navbar.style.background = "rgba(255, 255, 255, 0.95)";
+        }
+      });
+
+      // Enhanced form validation
+      function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+      }
+
+      function validatePhone(phone) {
+        const re = /^[\+]?[1-9][\d]{0,15}$/;
+        return re.test(phone.replace(/\s/g, ""));
+      }
+
+      // Real-time validation
+      document.getElementById("email").addEventListener("blur", function () {
+        if (this.value && !validateEmail(this.value)) {
+          this.style.borderColor = "#dc3545";
+          this.style.backgroundColor = "#fff5f5";
+        } else {
+          this.style.borderColor = "#E5E7EB";
+          this.style.backgroundColor = "";
+        }
+      });
+
+      document.getElementById("mobile").addEventListener("blur", function () {
+        if (this.value && !validatePhone(this.value)) {
+          this.style.borderColor = "#dc3545";
+          this.style.backgroundColor = "#fff5f5";
+        } else {
+          this.style.borderColor = "#E5E7EB";
+          this.style.backgroundColor = "";
+        }
+      });
+    </script>
+  </body>
+</html>
