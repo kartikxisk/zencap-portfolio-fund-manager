@@ -138,8 +138,8 @@
     <section class="py-5">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
-            <div class="contact-info-card">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="contact-info-card h-100">
               <i class="fas fa-envelope contact-icon"></i>
               <h4 class="mb-3">Email Us</h4>
               <p class="mb-3">
@@ -152,8 +152,8 @@
               >
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="contact-info-card">
+          <div class="col-lg-6 mb-4  mb-lg-0">
+            <div class="contact-info-card h-100 ">
               <i class="fas fa-globe contact-icon"></i>
               <h4 class="mb-3">Visit Our Website</h4>
               <p class="mb-3">
@@ -172,24 +172,18 @@
     </section>
 
     <!-- Main Contact Form Section -->
-    <section class="py-5 section-bg-alt">
+    <section id="contact-us" class="py-5 position-relative">
       <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="text-center section-title">Contact ZenCap</h2>
-          </div>
-        </div>
         <div class="row">
           <div class="col-lg-12">
             <div class="row">
               <!-- What can we do for you section -->
               <div class="col-lg-5 mb-5">
-                <div class="card-custom p-4 h-100">
+                <div class="h-100 select-service">
                   <h3 class="mb-4">What can we do for you?</h3>
                   <p class="mb-4">I would like to</p>
-
-                  <div class="mb-3">
-                    <div class="form-check mb-3">
+                  <div class="mb-3 d-flex flex-wrap" style="gap:8px">
+                    <div class="form-check">
                       <input
                         class="form-check-input"
                         type="radio"
@@ -201,7 +195,7 @@
                         Invest in AIFs
                       </label>
                     </div>
-                    <div class="form-check mb-3">
+                    <div class="form-check">
                       <input
                         class="form-check-input"
                         type="radio"
@@ -213,7 +207,7 @@
                         Partner as a Distributor
                       </label>
                     </div>
-                    <div class="form-check mb-3">
+                    <div class="form-check">
                       <input
                         class="form-check-input"
                         type="radio"
@@ -228,7 +222,7 @@
                         Get Investor Accreditation
                       </label>
                     </div>
-                    <div class="form-check mb-4">
+                    <div class="form-check">
                       <input
                         class="form-check-input"
                         type="radio"
@@ -240,11 +234,30 @@
                         Raise Debt for my Company
                       </label>
                     </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="service"
+                        id="raise-equity"
+                        value="raise-equity"
+                      />
+                      <label
+                        class="form-check-label option-pill"
+                        for="raise-equity"
+                      >
+                        Raise Equity
+                      </label>
+                    </div>
                   </div>
-
                   <div class="form-check d-flex align-items-start">
                     <input
-                      style="margin-top: 4px;margin-right: 8px;display: block;accent-color: var(--primary-color);"
+                      style="
+                        margin-top: 4px;
+                        margin-right: 8px;
+                        display: block;
+                        accent-color: var(--primary-color);
+                      "
                       type="checkbox"
                       id="minInvestment"
                     />
@@ -259,10 +272,9 @@
                   </div>
                 </div>
               </div>
-
               <!-- Your Information section -->
               <div class="col-lg-7">
-                <div class="card-custom p-4 h-100">
+                <div class="h-100">
                   <h3 class="mb-4">Your Information</h3>
                   <form id="contactForm">
                     <div class="row mb-3">
@@ -280,7 +292,7 @@
                     </div>
 
                     <div class="row mb-3">
-                      <div class="col-md-6">
+                      <div class="col-md-6 mb-3">
                         <label for="country" class="form-label"
                           >Country <span class="text-danger">*</span></label
                         >
@@ -317,7 +329,7 @@
                     </div>
 
                     <div class="row mb-3">
-                      <div class="col-md-6">
+                      <div class="col-md-6 mb-3">
                         <label for="email" class="form-label"
                           >E Mail <span class="text-danger">*</span></label
                         >
@@ -352,25 +364,6 @@
                           id="company"
                           placeholder="Optional"
                         />
-                      </div>
-                    </div>
-
-                    <div class="row mb-3">
-                      <div class="col-12">
-                        <label for="investmentAmount" class="form-label"
-                          >Investment Amount (if applicable)</label
-                        >
-                        <select
-                          class="form-select custom-input"
-                          id="investmentAmount"
-                        >
-                          <option value="">Select Range</option>
-                          <option value="1-5cr">INR 1-5 Crores</option>
-                          <option value="5-10cr">INR 5-10 Crores</option>
-                          <option value="10-25cr">INR 10-25 Crores</option>
-                          <option value="25-50cr">INR 25-50 Crores</option>
-                          <option value="50cr+">INR 50+ Crores</option>
-                        </select>
                       </div>
                     </div>
 

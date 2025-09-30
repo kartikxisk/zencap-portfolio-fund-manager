@@ -58,8 +58,8 @@ h6 {
 }
 
 .dropdown-item:active {
-    background-color: var(--primary-color) !important;
-    color: #ffffff;
+  background-color: var(--primary-color) !important;
+  color: #ffffff;
 }
 
 .nav-link {
@@ -210,9 +210,10 @@ h6 {
 
 /* Form Styles */
 .custom-input {
-  border: 2px solid #e5e7eb;
-  border-radius: 8px;
-  padding: 12px 16px;
+  border: none;
+  border-bottom: 2px solid #e5e7eb;
+  border-radius: 0px;
+  padding: 12px 0px;
   font-size: 14px;
   font-family: "Inter", sans-serif;
   transition: all 0.3s ease;
@@ -222,8 +223,9 @@ h6 {
 
 .custom-input:focus {
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px rgba(124, 178, 126, 0.1);
-  background-color: var(--pure-white);
+  /* box-shadow: 0 0 0 3px rgba(124, 178, 126, 0.1); */
+  box-shadow: none;
+  background-color: transparent;
   outline: none;
 }
 
@@ -231,7 +233,7 @@ h6 {
   font-weight: 500;
   font-size: 14px;
   color: #374151;
-  margin-bottom: 8px;
+  margin-bottom: 0.25rem;
   font-family: "Inter", sans-serif;
 }
 
@@ -248,6 +250,10 @@ h6 {
   text-align: center;
   background: var(--off-white);
   color: #374151;
+}
+
+.form-check {
+  padding-left: 0%;
 }
 
 .form-check-input:checked + .option-pill {
@@ -319,6 +325,84 @@ h6 {
   color: var(--primary-color);
 }
 
+#about,
+#deliver,
+#team,
+#contact-us {
+  position: relative; /* makes them the containing block for their ::before */
+  overflow: hidden; /* clips absolutely positioned children */
+  z-index: 0; /* create stacking context so ::before with -1 stays inside */
+}
+#about::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: 5%;
+  width: 500px;
+  height: 500px;
+  background-image: url("./assets/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: 0.04;
+  z-index: -1;
+  pointer-events: none;
+}
+
+#deliver::before {
+  content: "";
+  position: absolute;
+  bottom: -30%;
+  right: 0%;
+  width: 500px;
+  height: 500px;
+  background-image: url("./assets/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: 0.04;
+  z-index: -1;
+  pointer-events: none;
+}
+
+#contact-us::before {
+  content: "";
+  position: absolute;
+  bottom: -30%;
+  left: 5%;
+  width: 500px;
+  height: 500px;
+  background-image: url("./assets/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: 0.04;
+  z-index: -1;
+  pointer-events: none;
+}
+
+#team::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: 0%;
+  width: 500px;
+  height: 500px;
+  background-image: url("./assets/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: 0.04;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.select-service {
+  border-right: 1px solid #e5e7eb;
+  padding-right: 24px;
+  margin-right: 24px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .contact-hero {
@@ -330,8 +414,18 @@ h6 {
   }
 
   .custom-input {
-    padding: 10px 14px;
+    padding: 10px 0px;
   }
+
+  .select-service {
+  border-right: none;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+
+#contact-us::before  {
+  bottom: -20%;
+}
 }
 
 @media (max-width: 576px) {
