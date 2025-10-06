@@ -418,14 +418,14 @@ h6 {
   }
 
   .select-service {
-  border-right: none;
-  padding-right: 0px;
-  margin-right: 0px;
-}
+    border-right: none;
+    padding-right: 0px;
+    margin-right: 0px;
+  }
 
-#contact-us::before  {
-  bottom: -20%;
-}
+  #contact-us::before {
+    bottom: -20%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -501,4 +501,9 @@ h6 {
 
 .submit-success {
   animation: submitSuccess 0.3s ease;
+}
+
+.outlined {
+  color: var(--pure-white) !important; /* Inner color */
+  -webkit-text-stroke: 2px var(--primary-color); /* Outline color and thickness */
 }
